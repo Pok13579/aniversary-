@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #D1E9F6;
+    font-family: Arial, sans-serif; 
+}
+#countdown {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #7aa7de;
+}
+#goto-Game {
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+#goto-Game:hover {
+    background-color: #45a049;
+}

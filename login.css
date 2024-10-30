@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #D1E9F6;
+    font-family: Arial, sans-serif;
+}
+.container {
+background-color: #ffe4df;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+text-align: center;
+max-width: 100%; /* เพิ่ม max-width */
+width: 65%; /* ให้ container กว้าง 100% */
+box-sizing: border-box; /* ทำให้ padding ถูกนับรวมใน width */
+}
+
+/* Media Queries สำหรับขนาดหน้าจอที่เล็กลง */
+@media (max-width: 768px) {
+.container {
+padding: 15px; /* ลด padding บนอุปกรณ์ที่เล็กกว่า */
+}
+}
+
+@media (max-width: 480px) {
+.container {
+padding: 15px; /* ลด padding เพิ่มเติมสำหรับมือถือ */
+}
+}
+p-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.otp-input {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    text-align: center;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+}
+#submitBtn {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #F6EACB;
+    color: #EE4E4E;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#submitBtn:hover {
+    background-color: #faedd0;
+    color:#cd4242;
+}
+h4 {
+    color: #636c76; 
+}
+h2 {
+    color: #9997d8;
+}

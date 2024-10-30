@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Code And Go To Gift For you</title>
+    <link rel="stylesheet" href="login.css"/>
+</head>
+<body>
+    <div class="container">
+        <h2>Enter Code And Go To Gift For you</h2>
+        <h4>คำใบ้: วันที่/เดือน/ปี (เลขปี 2 ตัวสุดท้าย)</h4>
+        <div class="otp-container" id="otpContainer">
+            <input type="number" class="otp-input" maxlength="1" id="otp1" oninput="this.value = this.value.slice(0, 1)">
+            <input type="number" class="otp-input" maxlength="1" id="otp2" oninput="this.value = this.value.slice(0, 1)">
+            <input type="number" class="otp-input" maxlength="1" id="otp3" oninput="this.value = this.value.slice(0, 1)">
+            <input type="number" class="otp-input" maxlength="1" id="otp4" oninput="this.value = this.value.slice(0, 1)">
+            <input type="number" class="otp-input" maxlength="1" id="otp5" oninput="this.value = this.value.slice(0, 1)">
+            <input type="number" class="otp-input" maxlength="1" id="otp6" oninput="this.value = this.value.slice(0, 1)">
+        </div>
+        <button id="submitBtn">Verify</button>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
