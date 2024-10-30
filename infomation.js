@@ -9,13 +9,32 @@ const totalTimeElem = document.getElementById('total-time');
 showSlides(slideIndex);
 
 // Automatically play the audio on page load
+//window.onload = () => {
+//    setTimeout(() => {
+//        audio.play().catch(error => {
+//            console.log('Autoplay was prevented:', error);
+//        });
+//    }, 2000); // Delay of 1 second
+//};
+
 window.onload = () => {
-    setTimeout(() => {
+    if (document.readyState === 'complete') {
+        // Page has fully loaded
         audio.play().catch(error => {
             console.log('Autoplay was prevented:', error);
         });
-    }, 2000); // Delay of 1 second
+    } else {
+        // Check if the page loads later
+        document.onreadystatechange = () => {
+            if (document.readyState === 'complete') {
+                audio.play().catch(error => {
+                    console.log('Autoplay was prevented:', error);
+                });
+            }
+        };
+    }
 };
+
 
 function plusSlides(n) {
     showSlides(slideIndex += n);
