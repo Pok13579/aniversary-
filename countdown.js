@@ -1,6 +1,6 @@
 const countdownElement = document.getElementById('countdown');
-        const targetDate = new Date('December 24, 2024 00:00:01').getTime();
-        //const targetDate = new Date('October 30, 2024 03:00:01').getTime();
+        //const targetDate = new Date('December 24, 2024 00:00:01').getTime();
+        const targetDate = new Date('October 30, 2024 03:00:01').getTime();
 
         const gameButton = document.getElementById('goto-Game');
     
